@@ -4,17 +4,17 @@
     <div class="panel-body">
       <div class="checkbox">
         <label for="drawingMode">
-          <input type="checkbox" id="drawingMode"> Tryb rysowania
+          <input type="checkbox" id="drawingMode" checked="{{drawingMode}}"> Tryb rysowania
         </label>
       </div>
       <div class="form-group">
         <label for="brushSize">
-          Rozmiar pędzla: <input type="range" name="points" min="1" max="100" id="brushSize">
+          Rozmiar pędzla: <input type="range" name="points" min="1" max="100" id="brushSize" value="{{brushSize}}"> {{brushSize}}px
         </label>
       </div>
       <div class="form-group">
         <label for="brushColor">
-          Kolor: <input type="color" id="brushColor">
+          Kolor: <input type="color" id="brushColor" value="{{brushColor}}">
         </label>
       </div>
       <div class="form-group">
