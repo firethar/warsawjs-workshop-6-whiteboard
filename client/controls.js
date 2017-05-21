@@ -7,8 +7,11 @@ Template.controls.events({
   },
   'change #brushColor' : function(event) {
     Session.set('brushColor', event.target.value);
+  },
+  'click #clearCanvas' : function(event) {
+    //console.log("clear");
+    Meteor.call('clearCanvas');
   }
-
 });
 
 Template.controls.helpers({
