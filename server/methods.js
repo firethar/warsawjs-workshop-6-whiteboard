@@ -1,5 +1,5 @@
 Meteor.methods({
-  clearCanvas: function(){
-    Objects.remove({})
+  clearCanvas: function(sessionId){
+    Objects.remove({sessionId: sessionId})
   }
 })

@@ -10,7 +10,7 @@ Template.controls.events({
   },
   'click #clearCanvas' : function(event) {
     //console.log("clear");
-    Meteor.call('clearCanvas');
+    Meteor.call('clearCanvas', Session.get('sessionId'));
   }
 });
 
